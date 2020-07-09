@@ -1,0 +1,281 @@
+* {
+    padding :0 ;
+    margin : 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background :#119da1;
+    height : 80px;
+    width : 100%;
+    position : fixed;
+    top : 0px;
+    z-index: 1;
+    
+}
+
+.logo {
+    width : 134px;
+    line-height : 60px;
+    padding : 0 25px;   
+    text-align: center;
+    box-sizing: border-box;
+    float : left;   
+}
+
+nav ul {
+    float : right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display : inline-block;
+    line-height: 80px;
+    margin : 0 5px;
+
+}
+
+nav ul li a {
+    color : white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #f79cbf;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float : right;
+    line-height: 80px;
+    margin-right :40px;
+    cursor : pointer;
+    display: none;
+}
+
+#check {
+    display:none;
+}
+
+
+.top-wrapper {
+    padding: 300px 0 220px 0;
+    background-image: url(asset/logo.png);
+    background-size: 100px;
+    color: white ;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 1;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    background-color: #119da1;
+    font-family: monospace;
+  }
+  
+  .top-wrapper p {
+    opacity: 1;
+    margin-bottom: 3px;
+    background-color: #119da1;
+  }
+  
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: bold;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+    margin-left :75px;
+  }
+  
+  .lesson-icon {
+    position: relative;
+  }
+  
+  .lesson img {
+    width: 300px;
+  }
+
+  .lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .heading h3 {
+    font-weight: bold;
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-top:500px;
+    padding-bottom: 80px; 
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #119da1;
+    cursor: pointer;
+    box-shadow: 0 7px  #16bec4;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+  footer img {
+    width: 75px;
+    padding-top: 0px;
+    float: left;
+  }
+  
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+    float:right;
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  
+@media (max-width :952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .top-wrapper h1 {
+        font-size: 32px;
+      }
+      
+      .heading h2 {
+        font-size: 20px;
+      }
+      .lesson {
+        width: 50%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+      } 
+      .heading h2 {
+        font-size: 20px;
+      }  
+    }
+    
+
+@media (max-width :700px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #aaacaf;
+        top : 80px;
+        left : -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display : block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size : 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:rgb(41, 37, 37);
+
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .top-wrapper {
+        text-align: left;
+      }
+      .lesson {
+        width: 100%;
+        margin-left: 0px;
+      }
+      footer {
+        text-align: center;
+      }
+
+}
